@@ -31,13 +31,10 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your guess for fingers?" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TcR-N5-Dy5">
                                 <rect key="frame" x="65" y="195" width="195" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fingers.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xhg-Yr-hZG">
-                                <rect key="frame" x="42" y="304" width="258" height="250"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eI9-MS-UFt">
-                                <rect key="frame" x="138" y="250" width="49" height="30"/>
+                                <rect key="frame" x="138" y="242" width="49" height="30"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -45,12 +42,25 @@
                                     <action selector="submitGuess:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sMs-t2-XVX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBP-0c-P7g">
+                                <rect key="frame" x="223" y="242" width="37" height="30"/>
+                                <state key="normal" title="Retry">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restart:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QUZ-ol-cMx"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fingers.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xhg-Yr-hZG">
+                                <rect key="frame" x="72" y="290" width="180" height="183"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="feedBackText" destination="DEd-bP-aVS" id="d7l-Ic-sgV"/>
                         <outlet property="guessText" destination="TcR-N5-Dy5" id="AhJ-VY-zzU"/>
+                        <outlet property="retryButton" destination="sBP-0c-P7g" id="kOC-pQ-rEl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
