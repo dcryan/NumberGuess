@@ -13,6 +13,7 @@
 		402231BB1A352A300080CD94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 402231BA1A352A300080CD94 /* Images.xcassets */; };
 		402231BE1A352A300080CD94 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 402231BC1A352A300080CD94 /* LaunchScreen.xib */; };
 		402231CA1A352A300080CD94 /* NumberGuessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402231C91A352A300080CD94 /* NumberGuessTests.swift */; };
+		402231D41A352BCF0080CD94 /* fingers.png in Resources */ = {isa = PBXBuildFile; fileRef = 402231D31A352BCF0080CD94 /* fingers.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		402231C31A352A300080CD94 /* NumberGuessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumberGuessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		402231C81A352A300080CD94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		402231C91A352A300080CD94 /* NumberGuessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberGuessTests.swift; sourceTree = "<group>"; };
+		402231D31A352BCF0080CD94 /* fingers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fingers.png; path = ../../../../Desktop/fingers.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		402231B01A352A300080CD94 /* NumberGuess */ = {
 			isa = PBXGroup;
 			children = (
+				402231D31A352BCF0080CD94 /* fingers.png */,
 				402231B31A352A300080CD94 /* AppDelegate.swift */,
 				402231B51A352A300080CD94 /* ViewController.swift */,
 				402231B71A352A300080CD94 /* Main.storyboard */,
@@ -192,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				402231D41A352BCF0080CD94 /* fingers.png in Resources */,
 				402231B91A352A300080CD94 /* Main.storyboard in Resources */,
 				402231BE1A352A300080CD94 /* LaunchScreen.xib in Resources */,
 				402231BB1A352A300080CD94 /* Images.xcassets in Resources */,
